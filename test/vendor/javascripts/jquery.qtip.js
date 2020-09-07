@@ -1212,7 +1212,7 @@ function QTip(target, options, id, attr)
 
 			// Target wasn't mouse or absolute...
 			else {
-				// Check if event targetting is being used
+				// Check if event targeting is being used
 				if(target === 'event' && event && event.target && event.type !== 'scroll' && event.type !== 'resize') {
 					cache.target = $(event.target);
 				}
@@ -1592,7 +1592,7 @@ QTIP.bind = function(opts, event)
 		}
 
 		/*
-		 * Also make sure initial mouse targetting works correctly by caching mousemove coords
+		 * Also make sure initial mouse targeting works correctly by caching mousemove coords
 		 * on show targets before the tooltip has rendered.
 		 *
 		 * Also set onTarget when triggered to keep mouse tracking working
